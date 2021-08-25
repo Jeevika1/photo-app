@@ -8,28 +8,18 @@
   },
   "dependencies": {
     "autoprefixer": "^10.3.2",
-    "css-loader": "^1.0.0",
+    "css-loader": "^1.0.1",
     "express": "4.15.2",
     "react": "15.5.4",
-    "react-addons-css-transition-group": "^15.5.2",
+    "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "15.5.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }
